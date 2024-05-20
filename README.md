@@ -70,7 +70,7 @@ source .venv/bin/activate
 
 + Instalando as dependências da aplicação
 ```bash
-pip install llama-cpp-python && pip install llama-cpp-python[server] && pip install requests
+pip install llama-cpp-python llama-cpp-python[server] requests
 ```
 
 
