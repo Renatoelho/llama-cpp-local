@@ -17,7 +17,6 @@ Llama.cpp é uma biblioteca desenvolvida em **C++** para a implementação efici
 |------------|-------------|
 |Marca/Modelo | DELL G15|
 |Processador | Intel i5 10ª|
-|Placa de Vídeo | NVIDIA GTX 1650|
 |RAM | 32 GB|
 |Disco | 512 GB SSD|
 |CPUs | 12 Unidades|
@@ -34,14 +33,15 @@ Llama.cpp é uma biblioteca desenvolvida em **C++** para a implementação efici
 
 ## Deploy da aplicação
 
-### Clonando o repositório:
+
+### Clonando o repositório
 
 ```bash
 git clone https://github.com/Renatoelho/llama-cpp-local.git llama-cpp-local
 ```
 
 
-### Preparando o ambiente:
+### Preparando o ambiente
 
 + Instalando as dependências do sistema operacional
 ```bash
@@ -65,22 +65,22 @@ source .venv/bin/activate
 
 + Instalando as dependências da aplicação
 ```bash
-pip install -r requirements.txt --no-cache-dir --verbose --force-reinstall
+pip install -U pip setuptools wheel && pip install -r requirements.txt --no-cache-dir --verbose --force-reinstall
 ```
 
 
-### Testando aplicação
+### Baixando o modelo
 
-+ Baixando o modelo
 ```bash
 sh scripts/download_model.sh
 ```
 
->> ***Obs.:*** talvez seja necessário adicionar as permissões de execução aos scripts com o comando: ```chmod +x scripts/download_model.sh``` e ```chmod +x scripts/up_model.sh```.
+>> ***Obs.:*** talvez seja necessário adicionar as permissões de execução aos scripts com o comando: ```chmod +x scripts/download_model.sh``` e/ou ```chmod +x scripts/up_model.sh```.
 
 ### Ativando aplicação
 
 + Acessando como root
+
 ```bash
 sudo su
 ```
@@ -88,16 +88,20 @@ sudo su
 >> ***Obs.:*** talvez seja necessário reativar o ambiente virtual para usuário ```root```, use o comando: ```source .venv/bin/activate```.
 
 ```bash
-sh scripts/up_model.sh       
+sh scripts/up_model.sh
 ```
 
 >> ***Obs.:*** pode ocorrer um erro de limitação de memória, para resolver isso utilize de forma temporária o comando: ```ulimit -l unlimited``` no terminal.
 
 >> ***Obs 2.:*** esse script vai bloquear o terminal, então utilize outro para fazer as requests ao endpoint do modelo.
 
-+ Documentação do endpoint
+
+### Documentação do endpoint
 
 Utilize o endpoint [http://localhost:8000/docs](http://localhost:8000/docs) para entender os recursos disponíveis pelo modelo.
+
+
+### Testando aplicação
 
 + Perguntando ao modelo (abra outro terminal)
 

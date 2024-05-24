@@ -11,7 +11,7 @@ if [ $? -eq 0 ]; then
   if [ $? -eq 0 ]; then
     echo "Download do Modelo realizado com sucesso!"
   else
-    echo "Falha no download do Modelo. Código de erro: ${$?}"
+    echo "Falha no download do Modelo."
   fi
 else
   echo "Falha ao criar o diretório ${PWD}/${MODEL_PATH} para o Modelo."
