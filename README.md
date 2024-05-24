@@ -32,25 +32,20 @@ Llama.cpp é uma biblioteca desenvolvida em **C++** para a implementação efici
 + ![Python](https://img.shields.io/badge/Python-3.8%2B-E3E3E3)
 
 
-### Deploy da aplicação
+## Deploy da aplicação
 
-##### Clonando o repositório:
+### Clonando o repositório:
 
 ```bash
 git clone https://github.com/Renatoelho/llama-cpp-local.git llama-cpp-local
 ```
 
 
-##### Preparando o ambiente:
-
-+ Acessando como root
-```bash
-sudo su
-```
+### Preparando o ambiente:
 
 + Instalando as dependências do sistema operacional
 ```bash
-apt install wget python3-pip python3-dev python3-venv gcc g++ make jq -y
+sudo apt install wget python3-pip python3-dev python3-venv gcc g++ make jq -y
 ```
 
 + Acessando o diretório clonado
@@ -70,11 +65,11 @@ source .venv/bin/activate
 
 + Instalando as dependências da aplicação
 ```bash
-pip install llama-cpp-python llama-cpp-python[server] requests
+pip install -r requirements.txt --no-cache-dir --verbose --force-reinstall
 ```
 
 
-##### Testando a aplicação
+### Testando aplicação
 
 + Baixando o modelo
 ```bash
@@ -83,7 +78,14 @@ sh scripts/download_model.sh
 
 >> ***Obs.:*** talvez seja necessário adicionar as permissões de execução aos scripts com o comando: ```chmod +x scripts/download_model.sh``` e ```chmod +x scripts/up_model.sh```.
 
-+ Ativando aplicação
+### Ativando aplicação
+
++ Acessando como root
+```bash
+sudo su
+```
+
+>> ***Obs.:*** talvez seja necessário reativar o ambiente virtual para usuário ```root```, use o comando: ```source .venv/bin/activate```.
 
 ```bash
 sh scripts/up_model.sh       
