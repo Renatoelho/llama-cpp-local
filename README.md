@@ -2,13 +2,14 @@
 
 Llama.cpp é uma biblioteca desenvolvida em **C++** para a implementação eficiente de grandes modelos de linguagem, como o **LLaMA da Meta**. Otimizada para rodar em diversas plataformas, incluindo dispositivos com **recursos limitados**, oferece performance, velocidade de inferência e uso eficiente da memória, essenciais para a execução de modelos de grande porte. Além disso, sua portabilidade permite que desenvolvedores e pesquisadores a utilizem em diferentes sistemas operacionais e hardwares, sendo ideal para quem deseja implementar e **experimentar modelos** de linguagem em suas próprias infraestruturas, sem depender de serviços em nuvem. Isso possibilita **maior controle** sobre dados e modelos. Llama.cpp pode ser utilizada por várias outras linguagens, como **Python**, Java, Rust, Go e outras, permitindo experimentações e ajustes em um ambiente controlado, com maior segurança e personalização nas soluções baseadas em **IA**.
 
-<!-- https://www.youtube.com/@renato-coelho
+<!-- https://www.youtube.com/@renato-coelho-->
+
 # Apresentação em vídeo
 
 <p align="center">
-  <a href="https://youtu.be/xxxxx" target="_blank"><img src="thumbnail/xxxxxxx.png" alt="Vídeo de apresentação"></a>
+  <a href="https://youtu.be/xxxxx" target="_blank"><img src="thumbnail/llama-cpp_Youtube.png" alt="Vídeo de apresentação"></a>
 </p>
- -->
+
 
 ### Requisitos
 
