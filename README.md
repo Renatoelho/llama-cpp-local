@@ -10,18 +10,6 @@ Llama.cpp é uma biblioteca desenvolvida em **C++** para a implementação efici
 </p>
  -->
 
-
-### Configurações do Notebook utilizado
-
-|Tipo|Valor|
-|------------|-------------|
-|Marca/Modelo | DELL G15|
-|Processador | Intel i5 10ª|
-|RAM | 32 GB|
-|Disco | 512 GB SSD|
-|CPUs | 12 Unidades|
-
-
 ### Requisitos
 
 + ![Git](https://img.shields.io/badge/Git-2.25.1%2B-E3E3E3)
