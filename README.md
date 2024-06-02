@@ -7,7 +7,7 @@ Llama.cpp é uma biblioteca desenvolvida em **C++** para a implementação efici
 # Apresentação em vídeo
 
 <p align="center">
-  <a href="https://youtu.be/xxxxx" target="_blank"><img src="thumbnail/llama-cpp_Youtube.png" alt="Vídeo de apresentação"></a>
+  <a href="https://youtu.be/fxnXbaVNCkw" target="_blank"><img src="thumbnail/llama-cpp_Youtube.png" alt="Vídeo de apresentação"></a>
 </p>
 
 
